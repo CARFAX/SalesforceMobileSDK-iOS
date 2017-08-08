@@ -173,7 +173,7 @@ static NSMutableDictionary *syncMgrList = nil;
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (status == nil) status = (progress == 100 ? kSFSyncStateStatusDone : kSFSyncStateStatusRunning);
         sync.status = [SFSyncState syncStatusFromString:status];
-        sync.error = error
+        sync.error = error;
         if (progress>=0)  sync.progress = progress;
         if (totalSize>=0) sync.totalSize = totalSize;
         if (maxTimeStamp>=0) sync.maxTimeStamp = (sync.maxTimeStamp < maxTimeStamp ? maxTimeStamp : sync.maxTimeStamp);
