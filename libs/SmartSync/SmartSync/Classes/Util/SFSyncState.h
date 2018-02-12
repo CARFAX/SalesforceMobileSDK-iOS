@@ -91,6 +91,7 @@ extern NSString * const kSFSyncStateMergeModeLeaveIfChanged;
 @property (nonatomic) NSInteger totalSize;
 @property (nonatomic) SFSyncStateMergeMode mergeMode;
 @property (nonatomic) long long maxTimeStamp;
+@property (nonatomic) NSError* error;
 
 // Start and end time in milliseconds since 1970
 @property (nonatomic, readonly) NSInteger startTime;
